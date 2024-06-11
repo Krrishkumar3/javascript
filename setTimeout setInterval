@@ -1,0 +1,6 @@
+function greetVIRATKOHLI() {
+  console.log("Hello VIRATKOHLI");
+}
+
+setTimeout(greetVIRATKOHLI,5*1000);
+setInterval(greetVIRATKOHLI,5*1000);
