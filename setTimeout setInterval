@@ -4,3 +4,38 @@ function greetVIRATKOHLI() {
 
 setTimeout(greetVIRATKOHLI,5*1000);
 setInterval(greetVIRATKOHLI,5*1000);
+
+--------------------------------------------------------------------------------------
+
+const initialArray = [3,6,9];
+
+function logThing(str) {
+  console.log(str);
+}
+
+initialArray.forEach(logThing);
+
+--------------------------------------------------------------------------------------
+
+const dog = {
+  name: "doggie",
+  legCount: 2,
+  speaks: "bhow bhow", 
+};
+
+const cat = {
+  name: "kitty",
+  legCount: 4,
+  speaks: "meow meow",
+};
+
+function printStr(animal) {
+  console.log("animal " + animal.name + " has " + animal.legCount + " legs and says " + animal["speaks"]);
+}
+printStr(dog);
+printStr(cat);
+
+---------------------------------------------------------------------------------------
+
+
+
