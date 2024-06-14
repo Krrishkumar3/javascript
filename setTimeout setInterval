@@ -84,3 +84,21 @@ const ans = sumOfSomething(2, 3, function (n) {
 console.log(ans)
 
 --------------------------------------------------------------------------------------------
+
+ ASYNCHRONOUS FUNCTIONS 
+
+function findsum(n) {
+  let ans = 0;
+  for(let i = 0; i < 100; i++) {
+    ans += i;
+  }
+  console.log(ans);
+}
+function findSumTill100() {
+  return findsum(100);
+}
+
+setTimeout(findSumTill100, 5*1000);
+console.log("hello world");
+
+--------------------------------------------------------------------------------------------
