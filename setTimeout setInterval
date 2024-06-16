@@ -190,3 +190,24 @@ async function main() {
 main();
 
 -----------------------------------------------------------------------------------------------
+
+CALLBACK FUNCTIONS 
+
+function square(n) {
+  return n * n;
+}
+
+function cube(n) {
+  return n * n * n;
+}
+
+function sumofSomething(a, b, callbackfunction) {
+  let number1 = callbackfunction(a);
+  let number2 = callbackfunction(b);
+  return number1 + number2;
+}
+
+const ans = sumofSomething(2,5,square);
+console.log(ans);
+
+------------------------------------------------------------------------------------------------
