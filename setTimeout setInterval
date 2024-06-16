@@ -211,3 +211,56 @@ const ans = sumofSomething(2,5,square);
 console.log(ans);
 
 ------------------------------------------------------------------------------------------------
+
+// CALLBACK SYYNTAX 
+
+function kiratsAsyncFunction(callback) {
+  // do some async logic here 
+  callback("hi there!");
+}
+
+async function main() {
+  kiratsAsyncFunction(function(value) {
+    console.log(value);
+  });
+}
+
+main();
+
+--------------------------------------------------------------------------------------------------
+
+// Promise (then) syntax 
+function kiratAsyncFunction(){
+  let p = new Promise(function(resolve) {
+  // do some async logic here 
+    resolve("hi there!");
+  });
+  return p;
+}
+
+function main() {
+  kiratAsyncFunction().then(function(value) {
+    console.log(value);
+  });
+}
+
+main();
+
+---------------------------------------------------------------------------------------------------
+
+// ASYNC/AWAIT SYNTAX
+
+function kiratAsyncFunction() {
+  let p = new Promise(function(resolve) {
+    // do some async logic here 
+    resolve("hi there!")
+  });
+  return p;
+}
+
+async function main() {
+  const value = await kiratAsyncFunction();
+  console.log(value);
+}
+
+main();
