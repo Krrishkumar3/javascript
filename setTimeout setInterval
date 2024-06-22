@@ -264,3 +264,61 @@ async function main() {
 }
 
 main();
+
+-----------------------------------------------------------------------------------------------------
+MAP
+
+const input = [2,4,6,8,10];
+function transform(i) {
+  return i * 2;
+}
+const ans = input.map(transform);
+console.log(ans);
+-----------------------------------------
+
+const input = [1,2,3,4,5];
+
+const ans = input.map(function (i) {
+  return i*2
+});
+
+console.log(ans);
+------------------------------------------------------------------------------------------------------
+ARROW FUNCTIONS
+
+const sum = (a,b) => {
+  return a + b;
+}
+const ans = sum(2,3);
+console.log(ans);
+
+------------------------------------------------------------------------------------------------------
+FILTER
+
+const arr = [1,2,3,4,5];
+
+function filterlogic(i) {
+  if(i%2 == 0) {
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+
+const ans = arr.filter(filterlogic);
+console.log(ans);
+--------------------------------------------------
+const arr = [1,2,3,4,5];
+
+const ans = arr.filter(function (i) {
+    if(i%2 == 0) {
+      return true;
+    }
+    else{
+      return false;
+    }
+});
+                       
+console.log(ans);
+---------------------------------------------------------------------------------------------
